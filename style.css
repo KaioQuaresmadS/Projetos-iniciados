@@ -1,0 +1,67 @@
+/*Reset navegador*/
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, p, span {
+    margin: 0;
+    color: #666;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+}
+
+/*Começo do header*/
+/**/
+header {
+    position: relative;/*A posição dele é relativa*/
+    top: 0;/*Para definir onde ele ficará na página*/
+    height: auto;/*Ele vai tomar a altura de todos os elementos que compoem o header*/
+    width: 100%;/*Largura do header*/
+}
+/*navbar*/
+nav {
+    position: fixed;/*A posição é fixada*/
+    top: 0;/*Começa no topo da página*/
+    height: 100px;/*Altura definida exclusivamente*/
+    width: 100%;/*Largura definida exclusivamente*/
+    z-index: 1;/*Sobre sair sobre os outros elementos independente da posição*/
+    background-color:#fff;
+    border-bottom: 1px solid #CCC;
+
+}
+
+.nav::after {
+    clear: both;
+    content:"";
+    display: block;
+}
+.nav-container {
+    max-width: 1200px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+.nav-container, ul {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+}
+
+.nav-container li {
+
+}
